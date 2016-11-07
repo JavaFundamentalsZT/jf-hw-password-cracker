@@ -27,18 +27,20 @@ Requirements
 
 1. Use a fixed nr of producer threads: 2 to be precise
 2. Use a fixed nr of consumer threads: 4 of them
-3. Do not manually manage your threads, recall Executors from previous lectures
-4. Keep the concurrent collections, and the synchronisers in mind discussed this lecture, and use them appropriately
-5. Absolutely do not use the following: any form of _Lock_, _synchronized_, _volatile_
-6. Unless really needed, try to avoid using the _Atomic\*_ classes
-7. Implement a clean shutdown mechanism. The Consumer and Producer are already supplied with a _shutdown()_ method, you **may** use this, or any other thread-safe, clean, shutdown mechanism
-8. Use the _Salt_ and _Hash_ classes to find the data you need to break
-9. Return a list of passwords, in the same order, so they correspond to the data in _Salt_ and _Hash_
-10. Do not add any new libraries, the ones in _pom.xml_ will certainly suffice to solve this
-11. Be **absolutely completely positively** Thread Safe (and look up the definition in doubt)
-12. Only store the very first valid password guess: if another consumer finds another valid hash, discard it
-13. Make an efficient program, at least make sure your implementation is faster than a single-threaded implementation
-14. Read up yourself on how to properly do consumer-producer design, and handle clean shutdowns, if needed. You are all University students, and do not need handholding for every single detail. "It was not covered in the lecture" is **not** a valid excuse. 
+3. A producer's job is to keep producing, in a **Thread-Safe** way, **Random** inputs, ad infinitum, until asked to shutdown
+4. A consumer's job is to keep taking in random inputs, checking if they produce a hash collision, and if so, record which input triggered the collision 
+5. Do not manually manage your threads, recall Executors from previous lectures
+6. Keep the concurrent collections, and the synchronisers in mind discussed this lecture, and use them appropriately
+7. Absolutely do not use the following: any form of _Lock_, _synchronized_, _volatile_
+8. Unless really needed, try to avoid using the _Atomic\*_ classes
+9. Implement a clean shutdown mechanism. The Consumer and Producer are already supplied with a _shutdown()_ method, you **may** use this, or any other thread-safe, clean, shutdown mechanism
+10. Use the _Salt_ and _Hash_ classes to find the data you need to break
+11. Return a list of passwords, in the same order, so they correspond to the data in _Salt_ and _Hash_
+12. Do not add any new libraries, the ones in _pom.xml_ will certainly suffice to solve this
+13. Be **absolutely completely positively** Thread Safe in **all** your operations (and look up the definition in doubt)
+14. Only store the very first valid password guess: if another consumer finds another valid hash, discard it
+15. Make an efficient program, at least make sure your implementation is faster than a single-threaded implementation
+16. Read up yourself on how to properly do consumer-producer design, and handle clean shutdowns, if needed. You are all University students, and do not need handholding for every single detail. "It was not covered in the lecture" is **not** a valid excuse. 
 
 Submitting your assignment
 --------------------------
