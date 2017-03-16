@@ -1,6 +1,7 @@
 # Maven
-target
+/target
+/dependency-reduced-pom.xml
 
 # IntelliJ
-.idea
-*.iml
+/.idea
+/*.iml

@@ -1,4 +1,4 @@
-package com.zeroturnaround.concurrency.data;
+package org.zeroturnaround.jf.homework8.data;
 
 import java.util.Arrays;
 import java.util.List;
@@ -24,5 +24,4 @@ public interface Password {
       "santa",
       "FireflyIsTheBestSeriesEverAndIWillFightYouOverYourOwnDifferingOpinions"
   );
-
 }

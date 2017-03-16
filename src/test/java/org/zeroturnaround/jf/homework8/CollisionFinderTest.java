@@ -1,13 +1,14 @@
-package com.zeroturnaround.concurrency;
+package org.zeroturnaround.jf.homework8;
 
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
+
 import org.junit.Ignore;
 import org.junit.Test;
-import com.zeroturnaround.concurrency.data.Hash;
-import com.zeroturnaround.concurrency.data.Salt;
-import com.zeroturnaround.concurrency.util.BramHash;
+import org.zeroturnaround.jf.homework8.data.Hash;
+import org.zeroturnaround.jf.homework8.data.Salt;
+import org.zeroturnaround.jf.homework8.util.BramHash;
 
 /**
  * Test to validate your solution.
@@ -18,6 +19,7 @@ public class CollisionFinderTest {
   /**
    * Verifies that your 10 collision-inducing passwords indeed generate the same salted hashes as the originals.
    * Make sure the order they appear in matches the ones in "Hash" and "Salt".
+   * DO NOT EDIT!
    */
   @Test
   public void testCollisionSearch() {

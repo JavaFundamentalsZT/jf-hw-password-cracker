@@ -1,11 +1,11 @@
-package com.zeroturnaround.concurrency.util;
+package org.zeroturnaround.jf.homework8.util;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
 /**
  * Weakened SHA-512, easily broken (collisions found), don't ever use this in real life!
  */
-public class BramHash {
+public final class BramHash {
 
   private BramHash() {
     // Don't instantiate, use the static method

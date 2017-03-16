@@ -1,10 +1,10 @@
-package com.zeroturnaround.concurrency.data;
+package org.zeroturnaround.jf.homework8.data;
 
 import java.util.Arrays;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.zeroturnaround.concurrency.util.BramHash;
+import org.zeroturnaround.jf.homework8.util.BramHash;
 
 /**
  * Interface that stores the calculated hashes.
@@ -33,6 +33,7 @@ public interface Hash {
 
   static void calculateHashes() {
     Logger log = LoggerFactory.getLogger(Hash.class);
+
     for (int i = 0; i < Password.passwords.size(); i++) {
       String salt = Salt.salts.get(i);
       String password = Password.passwords.get(i);
