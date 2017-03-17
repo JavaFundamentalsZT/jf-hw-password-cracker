@@ -42,6 +42,12 @@ Requirements
 15. Make an efficient program, at least make sure your implementation is faster than a single-threaded implementation
 16. Read up yourself on how to properly do consumer-producer design, and handle clean shutdowns, if needed. You are all University students, and do not need handholding for every single detail. "It was not covered in the lecture" is **not** a valid excuse
 
+Lecture Code
+------------
+
+In the package `org.zeroturnaround.jf.lecture8` all code examples shown in class can be found. 
+A lot (most?) of this code originates from the excellent read _Java Concurrency in Practice_ by _Brian Goetz_, read this book. 
+
 Submitting your assignment
 --------------------------
 

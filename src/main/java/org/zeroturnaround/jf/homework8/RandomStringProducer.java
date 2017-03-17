@@ -5,8 +5,9 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Producer class, will keep generating new random words to serve as the input for the hashing algorithm.
- * The method "run()" should never return, until a proper shutdown is initiated.
+ * The method {@link #run()} should never return, until a proper shutdown is initiated.
  */
+@SuppressWarnings("unused")
 public class RandomStringProducer implements Runnable {
 
   private static final Logger log = LoggerFactory.getLogger(RandomStringProducer.class);

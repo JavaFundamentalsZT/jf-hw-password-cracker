@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Interface that stores the original passwords.
- *
+ * <p>
  * This data is supposed to be totally unknown.
  * The only reason this is here, is to allow you to validate my own hashes and results.
  * Please do not in any way use the info in this class in your own solution.

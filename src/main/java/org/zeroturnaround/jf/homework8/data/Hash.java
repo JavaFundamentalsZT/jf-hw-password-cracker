@@ -2,13 +2,14 @@ package org.zeroturnaround.jf.homework8.data;
 
 import java.util.Arrays;
 import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.zeroturnaround.jf.homework8.util.BramHash;
 
 /**
  * Interface that stores the calculated hashes.
- *
+ * <p>
  * For this exercise, these hashes are (obviously) a public given.
  * They were calculated using BramHash, with the input the concatenation of salt+password.
  * To avoid any possible confusion, if my salt is "hello" and password is "world",

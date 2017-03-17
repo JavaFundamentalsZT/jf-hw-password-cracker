@@ -8,7 +8,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 public final class BramHash {
 
   private BramHash() {
-    // Don't instantiate, use the static method
+    throw new RuntimeException("Should not create instances of this Util class");
   }
 
   /**
